@@ -89,9 +89,9 @@ img { max-width: 100%; height: auto; display: block; }
 /* PICKUP 2列カード */
 .pickup-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px 26px; }
 .entry { display: block; }
-.entry .thumb { aspect-ratio: 3/2; background: var(--bg-soft); overflow: hidden; position: relative; border-radius: var(--radius); }
+.entry .thumb { aspect-ratio: 16/9; background: var(--bg-soft); overflow: hidden; position: relative; border-radius: var(--radius); }
 .entry .thumb .ph { position: absolute; inset: 0; display: grid; place-items: center; font-size: 40px; opacity: .35; background: linear-gradient(135deg,#eef1f1,#dde4e4); }
-.entry .thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+.entry .thumb img { width: 100%; height: 100%; object-fit: contain; transition: transform .5s; }
 .entry:hover .thumb img { transform: scale(1.05); }
 .entry .cat { font-size: 11px; letter-spacing: .12em; font-weight: 700; color: var(--text); margin: 14px 0 0; }
 .entry .date { font-size: 11px; letter-spacing: .08em; color: var(--text-mute); margin-left: 10px; }
@@ -116,9 +116,9 @@ img { max-width: 100%; height: auto; display: block; }
 .special-carousel { position: relative; }
 .special-track { display: flex; transition: transform .6s cubic-bezier(.5,.05,.3,1); }
 .special-slide { flex: 0 0 60%; padding: 0 10px; }
-.special-slide .card-lg { position: relative; aspect-ratio: 16/10; border-radius: var(--radius); overflow: hidden; background: var(--bg-soft); }
+.special-slide .card-lg { position: relative; aspect-ratio: 16/9; border-radius: var(--radius); overflow: hidden; background: var(--bg-soft); }
 .special-slide .card-lg .ph { position: absolute; inset: 0; display: grid; place-items: center; font-size: 56px; opacity: .35; background: linear-gradient(135deg,#eef1f1,#dde4e4); }
-.special-slide .card-lg img { width: 100%; height: 100%; object-fit: cover; }
+.special-slide .card-lg img { width: 100%; height: 100%; object-fit: contain; }
 .special-slide .card-lg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.5), transparent 55%); }
 .special-slide .cap { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: 22px 26px; color: #fff; }
 .special-slide .cap .cat { font-size: 11px; letter-spacing: .12em; font-weight: 700; }
@@ -134,7 +134,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ---------- BLOG 4列（日付＋タイトルのみ） ---------- */
 .blog-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-.blog-entry .thumb { aspect-ratio: 4/3; }
+.blog-entry .thumb { aspect-ratio: 16/9; }
 .blog-entry .date { display: block; font-size: 11px; color: var(--text-mute); margin: 12px 0 4px; letter-spacing: .08em; }
 .blog-entry h3 { font-size: 13px; font-weight: 500; line-height: 1.7; margin: 0; }
 
