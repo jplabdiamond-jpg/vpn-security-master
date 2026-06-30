@@ -219,6 +219,7 @@ def build_article(art):
     <h1>{html.escape(title)}</h1>
   </div>
 </section>
+{f'<figure class="article-eyecatch"><img src="{html.escape(art["image"])}" alt="{html.escape(title)}" loading="eager"></figure>' if art.get("image") else ""}
 <article class="article-body">
   <div class="container">{body_html}</div>
 </article>
