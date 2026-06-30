@@ -59,3 +59,5 @@ python3 auto_publish.py --new
 | `callout` | 補足ボックス（`warn:true`で警告色） |
 | `table` | 比較表（`headers` + `rows`） |
 | `cta` | CTAボックス（`title` `text` `label` `url`） |
+
+<!-- deploy test: 20260630T052152Z -->
